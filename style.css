@@ -10,7 +10,7 @@ body{
   background-color: #ebe3c3;
 }
 #container {
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #fff;
   width: 80%;
   margin-top: 0;
