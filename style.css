@@ -12,6 +12,7 @@ body{
 }
 #container {
   justify-content: space-around;
+  align-items: center;
   background-color: #fff;
   width: 80%;
   margin-top: 0;
