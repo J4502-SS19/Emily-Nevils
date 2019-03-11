@@ -40,8 +40,8 @@ body{
   flex-grow: 1;
   border-radius: 30px;
   padding: 30px;
-	margin: auto;
-  border-bottom: none;
+	margin: 15px;
+  border-radius: 3px;
 }
 #nav a:link, #nav a:visited {
   display:flex;
