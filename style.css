@@ -2,12 +2,15 @@
 p{
   color:#666666;
   font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
 }
 h1{
   font-family: 'Merriweather', serif;
+  text-align: center;
 }
 body{
   background-color: #ebe3c3;
+  text-align: center;
 
 }
 #container {
@@ -18,7 +21,7 @@ body{
   background-color: #fff;
   width: 80%;
   margin: 0 auto 0 auto;
-  padding: 40px;
+  padding: 10px;
   background: #fff;
   border-radius: 5px;
   margin: auto;
