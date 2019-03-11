@@ -30,9 +30,9 @@ body{
   display:flex;
   flex-flow: row wrap;
   border-radius: 3px;
-  margin:1px;
-  padding:1px;
-  border-bottom: 1px solid #ccc;
+  margin:3px;
+  padding:3px;
+  border-bottom: none;
 }
 #nav a:link, #nav a:visited {
   display:flex;
