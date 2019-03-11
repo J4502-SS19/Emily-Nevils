@@ -34,14 +34,13 @@ body{
   padding: 0;
   list-style-type: none;
 }
-#nav li {
+#nav {
   display:flex;
   flex-flow: row wrap;
   flex-grow: 1;
   border-radius: 30px;
   padding: 30px;
 	margin: auto;
-
 }
 #nav a:link, #nav a:visited {
   display:flex;
