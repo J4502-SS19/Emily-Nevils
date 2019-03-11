@@ -21,16 +21,13 @@ body{
 }
 #nav {
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: column;
+  flex-flow: row wrap;
   padding: 0;
   list-style-type: none;
 }
 #nav li {
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   flex-flow: column;
   margin:0;
   padding:0;
@@ -38,9 +35,7 @@ body{
 }
 #nav a:link, #nav a:visited {
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: column;
+  flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -52,7 +47,7 @@ body{
 
 #nav a:hover, #nav a:active {
   display:flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   flex-wrap: wrap;
   flex-flow: column;
   background-color: #7a991a;
