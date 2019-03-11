@@ -36,7 +36,7 @@ body{
   flex-flow: row wrap;
   flex-grow: 1;
   border-radius: 15px;
-  padding: 50px;
+  padding: 30px;
 	margin: auto;
   border-bottom: none;
 }
