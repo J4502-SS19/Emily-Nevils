@@ -11,7 +11,7 @@ body{
 
 }
 #container {
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-grow: 1;
   align-items: center;
   background-color: #fff;
