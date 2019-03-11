@@ -8,10 +8,10 @@ h1{
 }
 body{
   background-color: #ebe3c3;
-  justify-content: center;
+
 }
 #container {
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #fff;
   width: 80%;
   margin-top: 0;
