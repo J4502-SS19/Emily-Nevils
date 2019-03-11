@@ -8,6 +8,7 @@ h1{
 }
 body{
   background-color: #ebe3c3;
+  justify-content: center;
 }
 #container {
   justify-content: space-between;
