@@ -14,11 +14,8 @@ body{
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
-  width: 80%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
+  width: 100px;
+  height: 100px;
   margin: 0 auto 0 auto;
   padding: 10px;
   background: #fff;
