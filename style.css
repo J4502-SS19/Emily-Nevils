@@ -1,26 +1,38 @@
-
 p{
   color:#666666;
   font-family: 'Merriweather Sans', sans-serif;
-  text-align: center;
+  /* text-align: center; */
 }
 h1{
   font-family: 'Merriweather', serif;
-  text-align: center;
+  line-height: 1.05em;
+  border-bottom: .5px;
+  /* text-align: center; */
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+p {
+    font-family: "Merriweather", Georgia, "Times New Roman", serif;
+    font-size: 1em;
+    margin-bottom: 0.8em;
 }
 body{
-  background-color: #ebe3c3;
-  text-align: center;
+  background-color: #FFFFFF;
+  /* text-align: center; */
+  line-height: 1.45em
 
 }
 #container {
-  flex: 1;
+  /* flex: 1;
   justify-content:flex-end;
   flex-grow: 1;
-  align-items: center;
+  align-items: center; */
   background-color: #fff;
-  width: 80%;
-  margin: 0 auto 0 auto;
+  width: 95%;
+  margin: 0 auto;
   padding: 10px;
   background: #fff;
   border-radius: 5px;
@@ -33,6 +45,7 @@ nav {
   flex-flow: row wrap;
   padding: 0;
   list-style-type: none;
+  justify-content: space-between;
 }
 nav li {
   display:flex;
@@ -48,10 +61,9 @@ nav a:link, nav a:visited {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color:#fff;
-  background-color: #98bf21;
+  color:#000;
   padding: 4px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family:"Merriweather", Georgia, "Times New Roman", serif;
 }
 
 nav a:hover, nav a:active {
@@ -59,14 +71,7 @@ nav a:hover, nav a:active {
   flex-flow: row wrap;
   background-color: #7a991a;
 }
-.caption {
-  font-family: Georgia, "Times New Roman", serif;
-  font-style: italic;
-  color: black;
-  font-size: .8em;
-  margin-top: 0;
-  text-align: right;
-}
+
 #footer {
   color: black;
   font-family: Georgia, "Times New Roman", serif;
@@ -75,4 +80,141 @@ nav a:hover, nav a:active {
 }
 img{
   border: none;
+}
+.caption {
+    font-size: 0.7em;
+    text-align: right;
+    margin-top: 0;
+    font-style: italic;
+}
+
+.byline {
+    font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    margin-top: 0.5em;
+    margin-bottom: .5em;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.dateline {
+    font-family: "Merriweather Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.7em;
+    color: #aaa;
+    margin: 0;
+    line-height: normal;
+    margin-bottom: .5em;
+}
+footer {
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+/* ################ START OF GRID STUFF #################################################### */
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+nav ul{
+  display: flex;
+  flex-flow: column;
+}
+.authorbox img{
+  /* visibility: hidden; */
+  display: none;
+}
+article{
+  margin-bottom: 0.7em;
+  border-bottom: 1px solid #ccc;
+}
+article:last-of-type{
+  border-bottom: none;
+}
+@media screen and (min-width: 450px) {
+  nav ul {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 600px) {
+
+  #container {
+    width: 80%
+  }
+  .authorbox img{
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+  }
+  .authorbox {
+    width: 15%;
+    max-width: 100px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+  }
+@media screen and (min-width:800px) {
+    .item1{
+      margin-right: auto;
+      }
+    nav ul li{
+        margin: 5px;
+        }
+    .pullquote{
+        display: block;
+      }
+    }
+
+@media screen and (min-width:1000px) {
+    article{
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr;
+      grid-gap: 20px;
+      grid-template-areas:
+      "a b b"
+      "c c e"
+      ". d d";
+    }
+  }
+
+.authorbox {
+  width: 100%;
+  grid-area: a;
+}
+
+.section1 {
+  grid-area: b;
+}
+
+.image {
+  grid-area: c;
+}
+
+.section2 {
+  grid-area: d;
+}
+
+.pullquote {
+  margin-top: 0;
+  grid-area: e;
+}
+
+.section1 p:first-of-type, .section2 p:first-of-type {
+  margin-top: 0;
+}
+
+@media screen and (mid-width: 1200px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "a b b e"
+      "c c c ."
+      ". d d .";
+  }
 }
