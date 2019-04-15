@@ -119,28 +119,7 @@ nav ul {
     display: none;
 }
 
-@media screen and (min-width: 700px){
 
-    nav ul {
-        display: flex;
-    }
-
-    nav ul li {
-        border-top: none;
-    }
-
-    .menu-trigger {
-        display: none;
-    }
-
-    header h1 {
-        order: 1;
-    }
-
-    nav {
-        order: 2;
-    }
-  }
 footer {
     border-top: 1px solid #ccc;
 }
@@ -193,6 +172,28 @@ article:last-of-type{
     margin-bottom: 10px;
   }
   }
+@media screen and (min-width: 700px){
+
+      nav ul {
+          display: flex;
+      }
+
+      nav ul li {
+          border-top: none;
+      }
+
+      .menu-trigger {
+          display: none;
+      }
+
+      header h1 {
+          order: 1;
+      }
+
+      nav {
+          order: 2;
+      }
+    }
 @media screen and (min-width:800px) {
     .item1{
       margin-right: auto;
